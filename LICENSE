@@ -72,8 +72,6 @@ The Project is kept unmodified (headers and images may be used, but no other par
 
 The Project must be redistributed under this License and with appropriate credits.
 
-Monetization of the repository or project that includes these files is prohibited unless explicit permission is granted by the Author.
-
 No Direct Use or Copying Outside of Include:
 Users may not use the source code of the Project directly outside of the #include mechanism or use the images or other assets in ways not permitted by this License. This means users cannot copy parts of the code or assets into their own projects or create derivative works based on the Project’s source code or assets unless given explicit permission.
 
