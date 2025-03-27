@@ -1,21 +1,107 @@
-MIT License
+Framework Resource License (FRL) v0.1
 
-Copyright (c) 2025 Daniel Oren-Ibarra
+Copyright © Daniel Oren-Ibarra - 2025
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+All Rights Reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+By downloading, using, or modifying this Project, you agree to the terms and conditions outlined below.
+
+1. Definitions
+“The Project” refers to any copyrightable work licensed under this License, including source code, documentation, images, assets, and other resources.
+
+“The Author” refers to the original creator(s) of the Project.
+
+“You” (or “Licensee”) refers to any individual or entity that uses, downloads, modifies, or redistributes the Project.
+
+“Modify” means altering, copying, adapting, or creating derivative works based on the Project.
+
+“Covered Work” refers to either the unmodified Project or a modified version of the Project.
+
+“Redistribute” or “Redistribution” refers to copying, distributing, or making the Project available to third parties.
+
+“Monetization” refers to any form of direct or indirect financial gain, including but not limited to sales, subscriptions, donations, advertisements, or paid access.
+
+2. License Grant
+This License grants you the following rights:
+
+  Use the Project for personal and commercial purposes.
+  
+  Modify the Project for private use.
+
+  Redistribute the Project in unmodified form, provided it remains under this License.
+
+However, the following restrictions apply:
+
+  Public redistribution of modified versions is prohibited without explicit permission.
+
+  Monetization of modified versions is prohibited without explicit permission.
+
+  Using parts of the Project in other projects requires explicit permission, except as provided in Section 4 below.
+
+3. Redistribution Terms
+You may redistribute unmodified copies of the Project under the following conditions:
+
+It must be licensed under this exact License.
+
+The original Author’s credits must not be removed or altered.
+
+No additional restrictions may be imposed beyond those in this License.
+
+Modified versions of the Project may not be publicly redistributed without explicit written permission from the Author.
+
+Independently hosting a copy of the Project for public redistribution is prohibited unless officially permitted by the Author.
+
+Redistribution using link monetization services or revenue-generating methods is strictly prohibited.
+
+4. Use in Other Projects
+API Use Exception:
+Developers are allowed to include unmodified header files (e.g., .fxh files) from the Project in their own projects during compile-time to call the Project’s functions. This exception applies under the following conditions:
+
+The header files remain unmodified and are used as-is.
+
+The header files must be included directly in the source code and compiled with the developer's project.
+
+No parts of the Project’s source code may be copied into the developer's source files, other than the unmodified headers.
+
+Hosting in Personal Projects (e.g., GitHub):
+Users are permitted to upload the unmodified files (including headers and assets like images) from the Project directly to their own GitHub repositories or other personal projects, under the following conditions:
+
+The Project is kept unmodified (headers and images may be used, but no other parts of the source code may be copied or included in the repository).
+
+The Project must be redistributed under this License and with appropriate credits.
+
+Monetization of the repository or project that includes these files is prohibited unless explicit permission is granted by the Author.
+
+No Direct Use or Copying Outside of Include:
+Users may not use the source code of the Project directly outside of the #include mechanism or use the images or other assets in ways not permitted by this License. This means users cannot copy parts of the code or assets into their own projects or create derivative works based on the Project’s source code or assets unless given explicit permission.
+
+5. License on Projects Incorporating the Project
+External Projects:
+You are not required to release your entire project under this License if you incorporate the Project into a larger work. Your own project can be licensed however you choose, but the files from this Project (including images, header files, or other assets) must remain under this License if included or redistributed.
+
+Redistribution of this Project's Files:
+Any distribution of the Project's files (e.g., header files, images, source code) must adhere to the terms of this License, including the requirement to keep the files unmodified and under the same License.
+
+6. Contributions
+If you contribute to the Project, you agree that:
+
+You hold all necessary rights to the material you contribute.
+
+Your contribution is licensed under this License.
+
+The Author has the right to incorporate your contribution into the Project.
+
+7. License Modifications
+The Author reserves the right to release updated versions of this License.
+
+Future versions will be clearly marked and will not retroactively affect previous releases unless explicitly agreed upon.
+
+8. Open-Source and Visible Source Considerations
+If the Project is distributed in a form where the source code is inherently visible (such as interpreted files or other text-based formats), this does not override the restrictions on modification and redistribution stated in this License.
+
+Unauthorized public redistribution of modified versions constitutes copyright infringement under applicable law and may result in legal consequences.
+
+9. Agreement to Terms
+By downloading, using, modifying (privately), or redistributing this Project, you acknowledge that you have read, understood, and agree to be bound by the terms of this License.
