@@ -53,7 +53,7 @@ namespace zfw {
 	//Projections
 	//===================================================================================
 
-	float GetDepth(float2 xy)
+	float getDepth(float2 xy)
 	{
 		return ReShade::GetLinearizedDepth(xy);
 	}
