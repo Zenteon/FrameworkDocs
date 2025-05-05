@@ -11,7 +11,7 @@ v0.1
 In addition to the standard COLOR and DEPTH Buffers provided by the ReShade.fxh, framework generates a few additional buffers for shader usage.  
 
 **Full Resolution Buffers:**  
-1. ```cpp zfw::tNormal``` - Octahedral encoded normal buffer, optionally processed with smoothing and texturing via Framework settings.
+1. ```zfw::tNormal``` - Octahedral encoded normal buffer, optionally processed with smoothing and texturing via Framework settings.
 3. ```zfw::tAlbedo``` - Estimated albedo buffer.
 4. ```zfw::tRoughness``` - Estimated roughness buffer.
 5. ```zfw::tVelocity``` - 1:1 Motion vectors, with dissoclusion stored in the z channel.
