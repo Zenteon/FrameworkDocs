@@ -26,15 +26,15 @@ In order to streamline development and allow ease of access to the generated buf
 **Projections**  
 ```float zfw::getDepth(float2 uv)``` Returns the linearized depth value, identical to ```ReShade::GetLinearizedDepth```, just faster to type.  
 ```float3 zfw::uvzToView(float3 uvz)``` Projects uvz coordinates to viewspace.  
-```float3 zfw::uvToView(float2 xy)``` Projects uv coordinates to viewspace, automatically grabbing depth from the specified uv coordinates.  
+```float3 zfw::uvToView(float2 uv)``` Projects uv coordinates to viewspace, automatically grabbing depth from the specified uv coordinates.  
 ```float3 zfw::viewToUv(float3 xyz)``` Projects viewspace coordinates to uvz space.  
 
 **Sampling Functions**  
 ```float3 zfw::getNormal(float2 uv)``` Samples and decodes the full resolution normal value at the specified uv coordinates.  
 ```float zfw::getRoughness(float2 uv)``` Returns the roughness buffer value at the specified uv coordinates.  
 ```float3 zfw::getVelocity(float2 uv)``` Returns the velocity buffer value at the specified uv coordinates. Sample confidence (1.0 for valid samples, 0.0 for invalid) is stored in the z channel for sample rejection.  
-```float3 zfw::getBackBuffer(float2 xy)``` Returns the rgb values of the COLOR buffer at the specified uv coordinates.  
-```float3 zfw::getAlbedo(float2 xy)``` Returns the estimated albedo value at the specified uv coordinates.  
+```float3 zfw::getBackBuffer(float2 uv)``` Returns the rgb values of the COLOR buffer at the specified uv coordinates.  
+```float3 zfw::getAlbedo(float2 uv)``` Returns the estimated albedo value at the specified uv coordinates.  
 
 
 ```float3 zfw::sampleNormal(float2 uv, float mip)``` Samples and decodes the quarter resolution normal value at the specified uv coordinates and miplevel.  
