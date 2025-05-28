@@ -3,10 +3,11 @@ Developer documentation for "Zenteon: Framework" ReShade reconstruction framewor
 
 # NOTE: This page is a work in process
 While the included .fhx header file(s) and assets are under the FRL license, the original shader still falls under the restrictions of the AGNYA License: https://github.com/nvb-uy/AGNYA-License.
+A "Hello World" file is included to verify everything is working properly.
 
 **Dependencies:** Framework is currently dependent on the standard "ReShade.fxh", this dependency is planned to be removed in the future.
 
-v0.1
+v0.2
 # Buffers  
 In addition to the standard COLOR and DEPTH Buffers provided by the ReShade.fxh, framework generates a few additional buffers for shader usage.  
 
