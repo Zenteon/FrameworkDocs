@@ -24,13 +24,10 @@
 #pragma once
 
 #define RES float2(BUFFER_WIDTH, BUFFER_HEIGHT)
-
 #define FARPLANE RESHADE_DEPTH_LINEARIZATION_FAR_PLANE
 #define IASPECT_RATIO float2(1.0, RES.x / RES.y)
-
 #define WRAPMODE(WTYPE) AddressU = WTYPE; AddressV = WTYPE; AddressW = WTYPE
 #define FILTER(FTYPE) MagFilter = FTYPE; MinFilter = FTYPE; MipFilter = FTYPE
-
 #define DIV_RND_UP(a, b) ((int(a)+int(b)-1)/int(b))
 #define DIVRES(DIVRES_RIV) Width = DIV_RND_UP(RES.x, DIVRES_RIV); Height = DIV_RND_UP(RES.y, DIVRES_RIV)
 
@@ -201,3 +198,11 @@ namespace zfw {
 	}
 
 }
+
+#undef RES
+#undef FARPLANE
+#undef IASPECT_RATIO
+#undef WRAPMODE
+#undef FILTER
+#undef DIV_RND_UP
+#undef DIVRES
