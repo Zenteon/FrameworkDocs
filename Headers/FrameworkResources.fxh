@@ -72,7 +72,7 @@ namespace zfw {
 	
 	float3 uvToView(float2 xy)
 	{
-		float z = GetDepth(xy);
+		float z = ReShade::GetLinearizedDepth(xy);
 		float3 m = float3(fl / IASPECT_RATIO, 1.0);
 		float3 xyz = float3(2*xy-1,1.0);
 		return (z * FARPLANE + 1.0) * xyz*m;
