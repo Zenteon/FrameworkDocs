@@ -189,7 +189,8 @@ namespace zfw {
 	}
 	
 	float3 toneMapInverse(float3 x, float whitepoint)
-	{
+	{	
+		x = pow(x,2.2);
 		float HDR_RED = 1.0 + rcp(whitepoint);
 		float l = dot(x, float3(0.2126, 0.7152,0.0722));
 		x /= l + 0.0001;
