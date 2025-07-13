@@ -77,9 +77,9 @@ namespace zfw {
 	
 	float3 viewToUv(float3 xyz)
 	{
-		float3 m = float3(fl / IASPECT_RATIO, 1.0);
-		xyz /= m * xyz.z;
-		return 0.5 + 0.5 * xyz;
+		float3 m = float3(fl / IASPECT_RATIO, FARPLANE);
+		xyz.xy /= m.xy * xyz.z;
+		return float3(0.5 + 0.5 * xyz.xy, (xyz.z - 1.0) / FARPLANE);
 	}
 	
 	float3 UVtoOCT(float2 xy)
