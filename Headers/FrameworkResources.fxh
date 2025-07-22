@@ -44,7 +44,7 @@ namespace zfw {
 	texture2D tLowNormal { DIVRES(4); Format = RG8; MipLevels = 7; };
 	sampler2D sLowNormal { Texture = tLowNormal; MagFilter = POINT; };
 	texture2D tLowDepth { DIVRES(4); Format = R16; MipLevels = 7; };
-	sampler2D sLowDepth { Texture = tLowDepth; };
+	sampler2D sLowDepth { Texture = tLowDepth; FILTER(POINT); };
 	
 	//===================================================================================
 	//Projections
