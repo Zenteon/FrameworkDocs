@@ -61,14 +61,24 @@ namespace zfw {
 	
 	float3 uvzToView(float3 xyz)
 	{
+		xyz.xy = (floor(xyz.xy*RES) + 0.5) / RES;
 		float3 m = float3(fl / IASPECT_RATIO, 1.0);
 		float z = xyz.z;
 		xyz = float3(2*xyz.xy-1,1.0);
 		return (z * FARPLANE + 1.0) * xyz*m;
 	}
+
+	float3 uvzToView(float2 xy, float z)
+	{
+		xy = (floor(xy*RES) + 0.5) / RES;
+		float3 m = float3(fl / IASPECT_RATIO, 1.0);
+		float3 xyz = float3(2*xy-1,1.0);
+		return (z * FARPLANE + 1.0) * xyz*m;
+	}
 	
 	float3 uvToView(float2 xy)
 	{
+		xy = (floor(xy*RES) + 0.5) / RES;
 		float z = ReShade::GetLinearizedDepth(xy);
 		float3 m = float3(fl / IASPECT_RATIO, 1.0);
 		float3 xyz = float3(2*xy-1,1.0);
